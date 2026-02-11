@@ -8,7 +8,7 @@ load_dotenv()
 
 @st.cache_data(ttl=300)
 def load_data():
-    return pd.read_sql("SELECT * FROM test_table", engine)
+    return pd.read_sql("SELECT * FROM document_control", engine)
 
 engine = create_engine(st.secrets["DB_URL"])
 
