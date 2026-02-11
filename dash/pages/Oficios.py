@@ -38,4 +38,4 @@ for col, (status, quantidade) in zip (cols, status_count.items()):
             border=True
         )
 
-        st.metric("Total", total, border=True)
+    st.metric("Total", total)
